@@ -7,25 +7,25 @@ body, html {
 @media only screen and (max-width: 550px) {
     .InformationSection1 {
         display: flex;
-        justify-content: start;
+        justify-content: start !important;
         margin-left: 30px;
     }
 
     .InformationSection2 {
         display: flex;
-        justify-content: start;
+        justify-content: start !important;
         margin-left: 30px;
     }
 
     .InformationSection3 {
         display: flex;
-        justify-content: start;
+        justify-content: start !important;
         margin-left: 30px;
     }
 
     .InformationSection4 {
         display: flex;
-        justify-content: start;
+        justify-content: start !important;
         margin-left: 30px;
     }
 }
