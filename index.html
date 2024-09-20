@@ -2,24 +2,30 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/JavaScript.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg.css">
     
     <title>Alkan Cakir</title>
 </head>
 
 <body>
-    <div class="LoadingScreen">
-        <div class="LoadingScreenName">Alkan Cakir</div>
-        <div class="LoadingScreenPortfolio">Portfolio</div>
-    </div>
-
     <div class="MainPage">
         <div class="Border1">
             <div class="Border2">
+                <div class="bg-animation">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="stars4"></div>
+                </div>
+
                 <div class="Title">
                     <div class="MainTextTitle">Alkan Cakir</div>
                     <div class="MainTextUnderTitle">Software Developer</div>
@@ -27,20 +33,77 @@
 
                 <div class="NavBar">
                     <ul>
-                        <li><a class="SelectedPage" href="index.html">Home</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Knowledge</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li>
+                            <input type="radio" name="Nav" id="HomePage" checked="checked">
+                            <label class="NavButton homePage" for="HomePage">Home</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Nav" id="KnowledgePage">
+                            <label class="NavButton knowledgePage" for="KnowledgePage">Knowledge</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Nav" id="ProjectsPage">
+                            <label class="NavButton projectsPage" for="ProjectsPage">Projects</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Nav" id="ContactPage">
+                            <label class="NavButton contactPage" for="ContactPage">Contact</label>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="InformationSection">
-                    <div class="Information">
+                <div class="InformationSection1">
+                    <div class="Information1">
                         My name is Alkan Cakir and i'm a student. Born in 2007 in Enschede, The Netherlands. I study Software Development at ROC van Twente. I really like learning new things, currently im learning to master Blender.
+                    </div>
+                </div>
+
+                <div class="InformationSection2">
+                    <div class="Information2">
+                        <div class="ProgressBar">
+                            <div class="bgText">C#</div>
+                            <div class="progress barBg">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="ProgressBar">
+                            <div class="bgText">HTML</div>
+                            <div class="progress barBg">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="ProgressBar">
+                            <div class="bgText">CSS</div>
+                            <div class="progress barBg">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="ProgressBar">
+                            <div class="bgText">JavaScript</div>
+                            <div class="progress barBg">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="InformationSection3">
+                    <div class="Information3">
+                        ok
+                </div>
+
+                <div class="InformationSection4">
+                    <div class="Information4">
+                        yes
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
