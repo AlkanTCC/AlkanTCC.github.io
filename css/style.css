@@ -10,6 +10,24 @@ body, html {
         justify-content: start;
         margin-left: 30px;
     }
+
+    .InformationSection2 {
+        display: flex;
+        justify-content: start;
+        margin-left: 30px;
+    }
+
+    .InformationSection3 {
+        display: flex;
+        justify-content: start;
+        margin-left: 30px;
+    }
+
+    .InformationSection4 {
+        display: flex;
+        justify-content: start;
+        margin-left: 30px;
+    }
 }
 
 @keyframes fadeIn {
