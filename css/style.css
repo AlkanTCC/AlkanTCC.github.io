@@ -4,54 +4,54 @@ body, html {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 1320px) {
-    .InformationSection1 {
-        display: flex;
-        justify-content: start !important;
-        margin-left: 30px;
-    }
-
-    .InformationSection2 {
-        display: flex;
-        justify-content: start !important;
-        margin-left: 30px;
-    }
-
-    .InformationSection3 {
-        display: flex;
-        justify-content: start !important;
-        margin-left: 30px;
-    }
-
-    .InformationSection4 {
-        display: flex;
-        justify-content: start !important;
-        margin-left: 30px;
-    }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+@font-face {
+    font-family: big;
+    src: url(../font/excitebike.ttf);
 }
 
 @font-face {
-    font-family: light;
-    src: url(../font/NeueMontreal-Light.otf);
+    font-family: small;
+    src: url(../font/kambulim-pixel.ttf);
 }
 
-@font-face {
-    font-family: medium;
-    src: url(../font/NeueMontreal-Medium.otf);
+@keyframes moveUp {
+    0% { margin-top: 0; }
+    100% { margin-top: -20px; }
 }
 
-.MainPage {
-    
+@keyframes moveDown {
+    0% { margin-top: -20px; }
+    100% { margin-top: 0; }
+}
+
+@keyframes MonkeyMoveUp {
+    0% { margin-top: 35px; }
+    100% { margin-top: -30px; }
+}
+
+@keyframes MonkeyMoveDown {
+    0% { margin-top: -30px; }
+    100% { margin-top: 35px; }
+}
+
+@keyframes BananaMoveUp {
+    0% { margin-top: 35px; }
+    100% { margin-top: -50px; }
+}
+
+@keyframes BananaMoveDown {
+    0% { margin-top: -50px; }
+    100% { margin-top: 35px; }
+}
+
+@keyframes PatatMoveUp {
+    0% { margin-top: 35px; }
+    100% { margin-top: -25px; }
+}
+
+@keyframes PatatMoveDown {
+    0% { margin-top: -25px; }
+    100% { margin-top: 35px; }
 }
 
 .Border1 {
@@ -76,195 +76,122 @@ body, html {
     box-sizing: border-box;
 }
 
-.Title {
-    position: fixed;
-    width: 370px;
-}
-
-.MainTextTitle {
-    color: white;
-    font-family: light;
-    font-size: 55px;
-    margin-top: 20px;
-    margin-left: 30px;
-    overflow: hidden;
-    letter-spacing: .10em;
-}
-
-.MainTextUnderTitle {
-    color: white;
-    font-family: light;
-    font-size: 15px;
-    margin-left: 30px;
-}
-
-ul, .NavButton {
-    transition: 0.4s;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: medium;
-    font-size: 13px;
-    color: white;
-}
-
-.NavButton:hover {
-    transition: 0.4s;
-    color: rgb(120, 120, 120);
-}
-
-input[type="radio"]  {
-    visibility: hidden;
-}
-
-input:checked + label {
-    color: rgb(120, 120, 120);
-}
-
-body:has(input:checked + .homePage) .InformationSection1 {
-    visibility: visible;
-}
-
-body:has(input:checked + .knowledgePage) .InformationSection2 {
-    visibility: visible;
-}
-
-body:has(input:checked + .projectsPage) .InformationSection3 {
-    visibility: visible;
-}
-
-body:has(input:checked + .contactPage) .InformationSection4 {
-    visibility: visible;
-}
-
-li {
-    margin-top: 20px;
-    margin-left: -10px;
-}
-
-.NavBar {
-    position: fixed;
-    z-index: 2;
-    margin-top: 130px;
-    margin-left: -10px;
-}
-
-.InformationSection1 {
-    visibility: hidden;
-    position: fixed;
-    height: 91.75%;
-    width: 96%;
+.AllVines{
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: space-between;
 }
 
-.InformationSection2 {
-    visibility: hidden;
-    position: fixed;
-    height: 91.75%;
-    width: 96%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
+.vine1 {
+    width: 300px;
+    rotate: 190deg;
+    margin-top: -100px;
+    margin-left: -100px;
 }
 
-.ProgressBar {
-    margin-top: 30px;
+.vine2 {
+    width: 300px;
+    rotate: 285deg;
+    margin-top: -100px;
+    margin-right: -100px;
 }
 
-.progress {
-    height: 5px;
-}
-
-.bgText {
-    font-family: medium;
-    font-size: 14px;
+.MainText {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    text-shadow: white 1px 0 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -130px;
 }
 
-.barBg {
-    box-shadow: 0 0 10px 0 rgb(132, 132, 132);
+.Title {
+    font-family: big;
+    color: rgb(2, 208, 60);
+    font-size: 50px;
+    text-shadow: rgb(2, 208, 60) 1px 0 40px;
 }
 
-.InformationSection3 {  
-    visibility: hidden;
-    position: fixed;
-    height: 91.75%;
-    width: 96%;
+.UnderTitle {
+    font-family: small;
+    color: white;
+    font-size: 30px;
+    margin-top: -15px;
+    text-shadow: white 1px 0 40px;
+}
+
+.AllBarrels {
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    position: relative;
+    z-index: 10;
 }
 
-.InformationSection4 {
-    visibility: hidden;
-    position: fixed;
-    height: 91.75%;
-    width: 96%;
+.BarrelContainer {
     display: flex;
-    justify-content: end;
-    align-items: end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
 }
 
-.Information1 {
-    animation: fadeIn 2s;
-    height: 280px;
-    width: 130px;
-    color: white;
-    font-family: medium;
-    font-size: 13px;
-    line-height: 21px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-
-    margin-right: 30px;
-    margin-bottom: 20px;
+.Barrel1, .Barrel2, .Barrel3, a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 30;
+    animation: moveDown 0.3s forwards;
 }
 
-.Information2 {
-    animation: fadeIn 2s;
-    height: 280px;
-    width: 200px;
-    color: white;
-    font-family: medium;
-    font-size: 13px;
-    line-height: 21px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-
-    margin-right: 30px;
-    margin-bottom: 20px;
+.Barrel1:hover, .Barrel2:hover, .Barrel3:hover {
+    position: relative;
+    z-index: 30;
+    animation: moveUp 0.3s forwards;
 }
 
-.Information3 {
-    animation: fadeIn 2s;
-    height: 280px;
-    width: 130px;
-    color: white;
-    font-family: medium;
-    font-size: 13px;
-    line-height: 21px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-
-    margin-right: 30px;
-    margin-bottom: 20px;
+.Monkey {
+    width: 100px;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 1;
+    margin-right: -10px;
+    animation: MonkeyMoveDown 0.3s forwards;
 }
 
-.Information4 {
-    animation: fadeIn 2s;
-    height: 280px;
-    width: 130px;
-    color: white;
-    font-family: medium;
-    font-size: 13px;
-    line-height: 21px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+.PatatEnemy {
+    width: 65px;
+    position: absolute;
+    margin-top: -25px;
+    z-index: 1;
+    animation: PatatMoveDown 0.3s forwards;
+}
 
-    margin-right: 30px;
-    margin-bottom: 20px;
+.BananaEnemy {
+    width: 75px;
+    position: absolute;
+    margin-top: -50px;
+    z-index: 1;
+    animation: BananaMoveDown 0.3s forwards;
+}
+
+body:has(.Barrel1:hover) .PatatEnemy {
+    animation: PatatMoveUp 0.3s forwards;
+}
+
+body:has(.Barrel2:hover) .Monkey {
+    animation: MonkeyMoveUp 0.3s forwards;
+}
+
+body:has(.Barrel3:hover) .BananaEnemy {
+    animation: BananaMoveUp 0.3s forwards;
+}
+
+.BarrelBottom {
+    z-index: 1;
+}
+
+.BarrelText {
+    font-family: small;
+    font-size: 50px;
+    color: white;
 }
