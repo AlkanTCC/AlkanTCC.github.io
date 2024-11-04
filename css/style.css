@@ -196,6 +196,22 @@ body:has(input:checked + .contactPage) .InformationSection4 {
     visibility: visible;
 }
 
+.cvPage {
+    transition: 0.4s;
+    color: rgb(120, 120, 120);
+
+    text-decoration: none;
+    color: white;
+    margin-left: 16px;
+    cursor: default;
+}
+
+.cvPage:hover {
+    transition: 0.4s;
+    color: rgb(120, 120, 120);
+    cursor: default;
+}
+
 li {
     margin-top: 20px;
     margin-left: -10px;
