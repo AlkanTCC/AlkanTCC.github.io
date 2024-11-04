@@ -4,6 +4,72 @@ body, html {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 1000px) {
+    .vine1 {
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: -65px !important;
+        margin-left: -65px !important;
+    }
+
+    .vine2 {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: -60px !important;
+        margin-left: -45px !important;
+    }
+
+    .MainText {
+        margin-top: -80px !important;
+    }
+
+    .Title {
+        font-size: 35px !important;
+    }
+
+    .UnderTitle {
+        font-size: 20px !important;
+        margin-top: -8px !important;
+    }
+
+    .Container {
+        flex-direction: column !important;
+        margin-top: 30px !important;
+        gap: 20px !important;
+    }
+
+    .TeamPhoto {
+        width: 200px !important;
+        border-radius: 15px !important;
+    }
+
+    .Information {
+        width: 250px !important;
+        height: 200px !important;
+        padding-left: 15px !important;
+        font-size: 14px !important;
+        margin-left: 0 !important;
+        margin-top: 30px !important;
+    }
+
+    .InformationText {
+        font-size: 11px !important;
+    }
+
+    .Monkey {
+        width: 70px !important;
+        margin-top: 35px !important;
+    }
+
+    .BarrelText {
+        font-size: 30px !important;
+    }
+
+    .AllBarrels {
+        margin-top: 70px !important;
+    }
+}
+
 @font-face {
     font-family: big;
     src: url(../font/excitebike.ttf);
